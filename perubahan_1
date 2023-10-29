@@ -116,7 +116,7 @@ topping_keju = input("\nApakah Anda ingin tambahan topping keju (+10.000)? (Ya/T
 
 # Menghitung harga total pizza
 if topping_keju.lower() == "ya":
-    harga_topping_keju = 10.000
+    harga_topping_keju = 13.000
 
 harga_total = harga_pizza + harga_toping + harga_crust + harga_size 
 
