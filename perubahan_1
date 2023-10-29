@@ -112,7 +112,7 @@ else:
     exit()
 
 # Memeriksa tambahan topping keju
-topping_keju = input("\nTambahkan keju: ")
+topping_keju = input("\nTambahkan Topping keju: ")
 
 # Menghitung harga total pizza
 if topping_keju.lower() == "ya":
