@@ -1,0 +1,108 @@
+# Menampilkan menu pizza
+print("Menu Pizza:")
+print("1. Pizza frankfurter")
+print("2. Pizza meatmonst")
+print("3. pizza meatmonsta")
+print("4. Pizza super supreme")
+print("5. Pizza super supreme chicken")
+
+# Meminta pengguna untuk memilih menu pizza
+menu_pizza = int(input("Pilih nomor pizza yang diinginkan (1-5): "))
+
+# Memeriksa pilihan pizza
+if menu_pizza == 1:
+    pizza = "Pizza frankfurter"
+    harga_pizza = 180.000
+elif menu_pizza == 2:
+    pizza = "Pizza meatmonst"
+    harga_pizza = 185.000
+elif menu_pizza == 3:
+    pizza = "Pizza meatmonsta"
+    harga_pizza = 190.000
+elif menu_pizza == 4:
+    pizza = "Pizza super supreme"
+    harga_pizza = 250.000
+elif menu_pizza == 5:
+    pizza = "Pizza super supreme chicken"
+    harga_pizza = 300.000
+else:
+    print("Pilihan tidak valid.")
+    exit()
+
+# Menampilkan toping pizza 
+print("Pilih topping pizza:")
+print("1. pan")
+print("2. stufedcurst chesee")
+print("3. stufedcurst sausage")
+print("4. chessy bites")
+print("5. crown crust")
+
+#menentukan pengguna memilih toping
+toping_pizza = int(input("pilih nomor topping pizza yang diinginkan (1-5): "))
+
+#memeriksa pilihan topping pizza
+if toping_pizza == 1:
+    toping = "pan"
+elif toping_pizza == 2:
+    toping = "stufedcurst chesee"
+elif toping_pizza == 3:
+    toping = "stufedcurst sausage"
+elif toping_pizza == 4:
+    crust = "chessy bites"
+elif toping_pizza == 5:
+    crust = "crown crust"
+else:
+    print("Pilihan crust tidak valid.")
+    exit()
+
+
+# Menampilkan pilihan crust pizza
+print("Pilih crust pizza:")
+print("1. Original")
+print("2. Thin Crust")
+print("3. Pan Crust")
+crust_choice = int(input("Pilih nomor crust pizza yang diinginkan (1-3): "))
+
+# Memeriksa pilihan crust pizza
+if crust_choice == 1:
+    crust = "Original"
+elif crust_choice == 2:
+    crust = "Thin Crust"
+elif crust_choice == 3:
+    crust = "Pan Crust"
+else:
+    print("Pilihan crust tidak valid.")
+    exit()
+
+# Meminta ukuran pizza
+print("Pilih ukuran pizza:")
+print("1. personal")
+print("2. medium")
+print("3. Large")
+size_choice = int(input("Pilih nomor ukuran pizza yang diinginkan (1-3): "))
+
+# Memeriksa pilihan ukuran pizza
+if size_choice == 1:
+    size = "Small"
+elif size_choice == 2:
+    size = "Medium"
+elif size_choice == 3:
+    size = "Large"
+else:
+    print("Pilihan ukuran tidak valid.")
+    exit()
+
+# Memeriksa tambahan topping keju
+topping_keju = input("Apakah Anda ingin tambahan topping keju? (Ya/Tidak): ")
+
+# Menghitung harga total pizza
+if topping_keju.lower() == "ya":
+    harga_pizza += 2.0
+
+# Menampilkan ringkasan pesanan
+print("Pesanan Anda:")
+print("Pizza:", pizza)
+print("Crust:", crust)
+print("Ukuran:", size)
+print("Tambahan topping keju:", topping_keju)
+print("Harga Total:", harga_pizza)
