@@ -5,10 +5,9 @@ print('==============================================================')
 # Menampilkan menu pizza
 print("\nMenu Pizza:")
 print("1. Pizza Frankfurter             = Rp 180.000")
-print("2. Pizza Meatmonst               = Rp 185.000")
-print("3. Pizza Meatmonsta              = Rp 190.000")
-print("4. Pizza Super Supreme           = Rp 250.000")
-print("5. Pizza Super Supreme Chicken   = Rp 300.000")
+print("2. Pizza Meatmonsta              = Rp 190.000")
+print("3. Pizza Super Supreme           = Rp 250.000")
+print("4. Pizza Super Supreme Chicken   = Rp 300.000")
 
 # Meminta pengguna untuk memilih menu pizza
 menu_pizza = int(input("\nPilih nomor pizza yang diinginkan [1/2/3/4/5]: "))
@@ -19,15 +18,12 @@ if menu_pizza == 1:
     pizza = "Pizza frankfurter"
     harga_pizza = 180000
 elif menu_pizza == 2:
-    pizza = "Pizza meatmonst"
-    harga_pizza = 185000
-elif menu_pizza == 3:
     pizza = "Pizza meatmonsta"
     harga_pizza = 190000
-elif menu_pizza == 4:
+elif menu_pizza == 3:
     pizza = "Pizza super supreme"
     harga_pizza = 250000
-elif menu_pizza == 5:
+elif menu_pizza == 4:
     pizza = "Pizza super supreme chicken"
     harga_pizza = 300000
 else:
