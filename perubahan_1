@@ -10,7 +10,7 @@ print("3. Pizza Super Supreme           = Rp 250.000")
 print("4. Pizza Super Supreme Chicken   = Rp 300.000")
 
 # Meminta pengguna untuk memilih menu pizza
-menu_pizza = int(input("\nPilih nomor pizza yang diinginkan [1/2/3/4/5]: "))
+menu_pizza = int(input("\nPilih nomor pizza yang diinginkan [1/2/3/4]: "))
 print('--------------------------------------------------------------')
 
 # Memeriksa pilihan pizza
