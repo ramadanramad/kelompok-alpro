@@ -17,19 +17,19 @@ print('--------------------------------------------------------------')
 # Memeriksa pilihan pizza
 if menu_pizza == 1:
     pizza = "Pizza frankfurter"
-    harga_pizza = 180.000
+    harga_pizza = 180000
 elif menu_pizza == 2:
     pizza = "Pizza meatmonst"
-    harga_pizza = 185.000
+    harga_pizza = 185000
 elif menu_pizza == 3:
     pizza = "Pizza meatmonsta"
-    harga_pizza = 190.000
+    harga_pizza = 190000
 elif menu_pizza == 4:
     pizza = "Pizza super supreme"
-    harga_pizza = 250.000
+    harga_pizza = 250000
 elif menu_pizza == 5:
     pizza = "Pizza super supreme chicken"
-    harga_pizza = 300.000
+    harga_pizza = 300000
 else:
     print("Pilihan tidak valid.")
     exit()
@@ -53,16 +53,16 @@ if toping_pizza == 1:
     harga_toping = 0
 elif toping_pizza == 2:
     toping = "stufedcurst chesee"
-    harga_toping = 11.000 
+    harga_toping = 11000 
 elif toping_pizza == 3:
     toping = "stufedcurst sausage"
-    harga_toping = 11.000
+    harga_toping = 11000
 elif toping_pizza == 4:
     crust = "chessy bites"
-    harga_toping = 13.000
+    harga_toping = 13000
 elif toping_pizza == 5:
     crust = "crown crust"
-    harga_toping = 15.000
+    harga_toping = 15000
 else:
     print("Pilihan crust tidak valid.")
     exit()
@@ -70,9 +70,9 @@ else:
 
 # Menampilkan pilihan crust pizza
 print("\nPilih crust pizza:")
-print("1. Original      = +Rp")
-print("2. Thin Crust    = +Rp")
-print("3. Pan Crust     = +Rp")
+print("1. Original      = +Rp 0")
+print("2. Thin Crust    = +Rp 10.000")
+print("3. Pan Crust     = +Rp 13.000")
 crust_choice = int(input("\nPilih nomor crust pizza yang diinginkan [1/2/3]: "))
 print('--------------------------------------------------------------')
 
@@ -82,19 +82,19 @@ if crust_choice == 1:
     harga_crust = 0
 elif crust_choice == 2:
     crust = "Thin Crust"
-    harga_crust = 10.000
+    harga_crust = 10000
 elif crust_choice == 3:
     crust = "Pan Crust"
-    harga_crust = 13.000
+    harga_crust = 13000
 else:
     print("Pilihan crust tidak valid.")
     exit()
 
 # Meminta ukuran pizza
 print("\nPilih ukuran pizza:")
-print("1. Personal  = +Rp ")
-print("2. Medium    = +Rp ")
-print("3. Large     = +Rp ")
+print("1. Personal  = +Rp 0")
+print("2. Medium    = +Rp 25.000")
+print("3. Large     = +Rp 40.000")
 size_choice = int(input("Pilih nomor ukuran pizza yang diinginkan [1/2/3]: "))
 
 # Memeriksa pilihan ukuran pizza
@@ -103,10 +103,10 @@ if size_choice == 1:
     harga_size = 0
 elif size_choice == 2:
     size = "Medium"
-    harga_size = 25.000
+    harga_size = 25000
 elif size_choice == 3:
     size = "Large"
-    harga_size = 40.000
+    harga_size = 40000
 else:
     print("Pilihan ukuran tidak valid.")
     exit()
@@ -116,7 +116,7 @@ topping_keju = input("\nTambahkan Topping keju: ")
 
 # Menghitung harga total pizza
 if topping_keju.lower() == "ya":
-    harga_topping_keju = 13.000
+    harga_topping_keju = 13000
 
 harga_total = harga_pizza + harga_toping + harga_crust + harga_size + harga_topping_keju
 
@@ -127,4 +127,4 @@ print(f"Pizza               : {pizza}")
 print(f"Crust               : {crust}")
 print(f"Ukuran              : {size}")
 print(f"Tambahan topping keju: {topping_keju}")
-print("Harga Total:", harga_total)
+print("Harga Total: ", harga_total)
