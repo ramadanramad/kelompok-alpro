@@ -2,7 +2,7 @@ def turn_right():
     turn_left()
     turn_left()
     turn_left()
-def Jump():
+def step():
     move()
     turn_left()
     move()
@@ -12,12 +12,12 @@ def Jump():
     move()
     turn_left()
 
-Jump()
-Jump()
-Jump()
-Jump()
-Jump()
-Jump()
+step()
+step()
+step()
+step()
+step()
+step()
 ################################################################
 # WARNING: Do not change this comment.
 # Library Code is below.
